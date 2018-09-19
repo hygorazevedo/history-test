@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom'
 
 import Home from './Home/Home'
 
@@ -10,6 +10,7 @@ export default class Base extends Component {
                 <Route 
                     path="/home" 
                     component={ Home } />
+                <Redirect to="/home" />
             </div>
         )
     }
